@@ -38,4 +38,14 @@
             , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+
+    wired_split {
+        compatible = "zmk,wired-split";
+        device = <&xiao_serial>;
+        status = "okay";
+    };
+};
+
+&uart0 {
+    status = "okay";
 };
